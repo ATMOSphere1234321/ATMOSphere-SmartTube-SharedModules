@@ -33,7 +33,7 @@ import com.eclipsesource.v8.debug.mirror.Scope;
 import com.eclipsesource.v8.debug.mirror.SourceLocation;
 import com.eclipsesource.v8.debug.mirror.ValueMirror;
 
-@Ignore("Debugging changed on upstream V8")
+@Ignore("Debugging changed on upstream V8")  // SKIP-OK: #legacy-untriaged
 public class FrameTest {
 
     private static String script = "    // 1  \n"

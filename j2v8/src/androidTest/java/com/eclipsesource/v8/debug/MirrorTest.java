@@ -39,7 +39,7 @@ import com.eclipsesource.v8.debug.mirror.PropertyMirror;
 import com.eclipsesource.v8.debug.mirror.StringMirror;
 import com.eclipsesource.v8.debug.mirror.ValueMirror;
 
-@Ignore("Debugging changed on upstream V8")
+@Ignore("Debugging changed on upstream V8")  // SKIP-OK: #legacy-untriaged
 public class MirrorTest {
 
     private static String script = "            // 1  \n"

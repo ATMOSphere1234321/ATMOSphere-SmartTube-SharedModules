@@ -138,7 +138,7 @@ public class BoundedInputStream extends InputStream {
     @Override
     public long skip(final long n) throws IOException {
         final long toSkip = max>=0 ? Math.min(n, max-pos) : n;
-        final long skippedBytes = in.skip(toSkip);
+        final long skippedBytes = in.skip(toSkip);  // SKIP-OK: #legacy-untriaged
         pos+=skippedBytes;
         return skippedBytes;
     }

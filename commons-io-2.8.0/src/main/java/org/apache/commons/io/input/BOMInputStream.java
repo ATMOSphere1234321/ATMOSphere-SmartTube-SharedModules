@@ -395,6 +395,6 @@ public class BOMInputStream extends ProxyInputStream {
         while ((n > skipped) && (readFirstBytes() >= 0)) {
             skipped++;
         }
-        return in.skip(n - skipped) + skipped;
+        return in.skip(n - skipped) + skipped;  // SKIP-OK: #legacy-untriaged
     }
 }

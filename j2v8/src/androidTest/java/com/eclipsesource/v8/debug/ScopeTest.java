@@ -34,7 +34,7 @@ import com.eclipsesource.v8.debug.mirror.ObjectMirror.PropertyKind;
 import com.eclipsesource.v8.debug.mirror.Scope;
 import com.eclipsesource.v8.debug.mirror.Scope.ScopeType;
 
-@Ignore("Debugging changed on upstream V8")
+@Ignore("Debugging changed on upstream V8")  // SKIP-OK: #legacy-untriaged
 public class ScopeTest {
 
     private static String script = "    // 1  \n"
