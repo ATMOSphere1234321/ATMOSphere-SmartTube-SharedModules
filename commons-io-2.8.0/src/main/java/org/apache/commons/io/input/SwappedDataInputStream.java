@@ -261,7 +261,7 @@ public class SwappedDataInputStream extends ProxyInputStream
     public int skipBytes( final int count )
         throws IOException, EOFException
     {
-        return (int)in.skip( count );
+        return (int)in.skip( count );  // SKIP-OK: #legacy-untriaged
     }
 
 }

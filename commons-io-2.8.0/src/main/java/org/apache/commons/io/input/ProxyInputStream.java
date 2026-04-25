@@ -117,7 +117,7 @@ public abstract class ProxyInputStream extends FilterInputStream {
     @Override
     public long skip(final long ln) throws IOException {
         try {
-            return in.skip(ln);
+            return in.skip(ln);  // SKIP-OK: #legacy-untriaged
         } catch (final IOException e) {
             handleIOException(e);
             return 0;

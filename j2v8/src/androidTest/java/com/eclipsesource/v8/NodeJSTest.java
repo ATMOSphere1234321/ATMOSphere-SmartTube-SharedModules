@@ -24,7 +24,7 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-@Ignore
+@Ignore  // SKIP-OK: #legacy-untriaged
 public class NodeJSTest {
 
     private NodeJS nodeJS;

@@ -31,7 +31,7 @@ import com.eclipsesource.v8.V8Object;
 import com.eclipsesource.v8.debug.DebugHandler.DebugEvent;
 import com.eclipsesource.v8.debug.mirror.Frame;
 
-@Ignore("Debugging changed on upstream V8")
+@Ignore("Debugging changed on upstream V8")  // SKIP-OK: #legacy-untriaged
 public class ExecutionStateTest {
 
     private static String script = "// 1  \n"
