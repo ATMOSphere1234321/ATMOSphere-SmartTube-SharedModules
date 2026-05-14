@@ -1,3 +1,23 @@
+## INHERITED FROM Helix Constitution
+
+This module is a submodule of an ATMOSphere-family project that
+includes the Helix Constitution submodule at the parent's
+`constitution/` path. All rules in `constitution/CLAUDE.md` and the
+`constitution/Constitution.md` it references (universal anti-bluff
+covenant §11.4, no-guessing mandate §11.4.6, credentials-handling
+mandate §11.4.10, host-session safety §12, data safety §9, mutation-
+paired gates §1.1) apply unconditionally to every change landed here.
+The module-specific rules below extend them — they never weaken any
+universal clause.
+
+When this file disagrees with the constitution submodule, the
+constitution wins. Locate the constitution submodule from any
+arbitrary nested depth using its `find_constitution.sh` helper.
+
+Canonical reference: <https://github.com/HelixDevelopment/HelixConstitution>
+
+---
+
 # CLAUDE.md — smarttube-player / MediaServiceCore / SharedModules
 
 Nested SharedModules used by the MediaServiceCore YouTube backend. ATMOSphere
@@ -574,6 +594,18 @@ The auto-generated `docs/Issues_Summary.md` includes the Status column. All thre
 **Canonical authority:** parent
 [`docs/guides/ATMOSPHERE_CONSTITUTION.md`](docs/guides/ATMOSPHERE_CONSTITUTION.md)
 §11.4.15. Pre-build gates `CM-ITEM-STATUS-TRACKING` + `CM-COVENANT-114-15-PROPAGATION`.
+
+Non-compliance is a release blocker regardless of context.
+
+**§11.4.16 — Item-type tracking mandate (User mandate, 2026-05-14)**
+
+Every active item in `docs/Issues.md` carries a `**Type:**` line with one of three values: `Bug` (product defect / regression / user-visible broken behaviour), `Feature` (new capability not previously offered to end users), `Task` (internal workstream — refactor, doc, infra, gate, audit; the lowest-stakes default when ambiguous). The vocabulary is CLOSED — no other value is permitted.
+
+The auto-generated `docs/Issues_Summary.md` includes the Type column. All three file types (`.md`, `.html`, `.pdf`) MUST be in sync at all times — enforced by `CM-DOCS-EXPORT-SYNC` (§11.4.12 + §11.4.15 + §11.4.16 amendment).
+
+**Canonical authority:** parent
+[`docs/guides/ATMOSPHERE_CONSTITUTION.md`](docs/guides/ATMOSPHERE_CONSTITUTION.md)
+§11.4.16. Pre-build gates `CM-ITEM-TYPE-TRACKING` + `CM-COVENANT-114-16-PROPAGATION`.
 
 Non-compliance is a release blocker regardless of context.
 
