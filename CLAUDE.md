@@ -718,7 +718,7 @@ Composes with §9.2 (data-safety hardlinked backup), §11.4.4 (test-interrupt-on
 
 No escape hatch — the operator-pressure escape ("just force-push, we'll fix it later") is the exact failure mode this anchor closes. Pre-build gate `CM-COVENANT-114-41-PROPAGATION` enforces this anchor in every CLAUDE.md/AGENTS.md across parent + 10 owned submodules + nested submodules + HelixQA dependencies. Paired mutation strips the anchor literal → gate FAILs. Gate `CM-FORCE-PUSH-MERGE-FIRST` walks `docs/changelogs/<tag>.md` "Force-push" entries for the 7 audit elements; paired mutation strips any element and asserts gate FAILs.
 
-**Canonical authority:** constitution submodule [`Constitution.md`](../../../../../../constitution/Constitution.md) §11.4.41.
+**Canonical authority:** constitution submodule [`Constitution.md`](../../../../../constitution/Constitution.md) §11.4.41.
 
 Non-compliance is a release blocker regardless of context.
 
