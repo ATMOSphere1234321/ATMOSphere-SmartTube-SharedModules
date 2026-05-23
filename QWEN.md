@@ -1,4 +1,4 @@
-# QWEN.md — smarttube-player / SharedModules
+# QWEN.md — smarttube-player / MediaServiceCore / SharedModules
 
 | Field | Value |
 |---|---|
@@ -42,7 +42,7 @@ Per §11.4.35 canonical-root inheritance clarity:
 
 ## Module summary
 
-Nested SharedModules used by the SmartTube fork. ATMOSphere fork providing common UI + util module shared across the SmartTube codebase.
+Nested SharedModules used by the MediaServiceCore YouTube backend. ATMOSphere fork providing the common UI/util module shared across MediaServiceCore.
 
 For full module context (build steps, integration points, host-session safety,
 submodule-specific commit/push discipline) read this directory's `CLAUDE.md`
